@@ -27,6 +27,10 @@ const config = {
         },
       },
       {
+        test: /\.css$/,
+        loader: ["style-loader", "css-loader"]
+      },
+      {
         test: /\.scss$/,
         exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
@@ -51,7 +55,7 @@ const config = {
     }),
     new webpack.HashedModuleIdsPlugin(),
     new WebpackChunkHash(),
-    function() {
+    function () {
       this.plugin("done", (stats) => {
         let gVars = {};
         try {
