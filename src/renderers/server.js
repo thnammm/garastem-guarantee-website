@@ -17,6 +17,6 @@ export async function serverRenderer() {
     initialMarkup: ReactDOMServer.renderToString(
       <App initialData={initialData} />
     ),
-    pageData,
+    pageData
   });
 }
