@@ -15,36 +15,8 @@ import SettingIndex from "../admin-setting/Index";
 import HelpIndex from "../admin-help/Index";
 import NotFound from "../admin-main/NotFound";
 
-const sidebarMenuLink = {
-  id: [0, 1, 2, 3, 4, 5, 6],
-  image: [
-    "/img/main/sidebarMenu-Overview.png",
-    "/img/main/sidebarMenu-Store.png",
-    "/img/main/sidebarMenu-Guest.png",
-    "/img/main/sidebarMenu-Product.png",
-    "/img/main/sidebarMenu-Setting.png",
-    "/img/main/sidebarMenu-Help.png",
-    "/img/main/sidebarMenu-Logout.png"
-  ],
-  name: [
-    "Thống kê",
-    "Cửa hàng",
-    "Khách hàng",
-    "Sản phẩm",
-    "Cài đặt",
-    "Trợ giúp",
-    "Đăng xuất"
-  ],
-  link: [
-    "/admin/overview",
-    "/admin/store",
-    "/admin/guest",
-    "/admin/product",
-    "/admin/setting",
-    "/admin/help",
-    "/admin/logout"
-  ]
-};
+// Import Datas
+import {sidebarMenuLink as dataNav} from "../../datatest/adminData"
 
 export function App() {
   return (
@@ -61,11 +33,11 @@ export function App() {
             />
             <p className="sidebarName"> Tôm Ho Lần </p>
           </div>
-          <SidebarMenuTop sidebar={sidebarMenuLink} />
+          <SidebarMenuTop sidebar={dataNav} />
         </div>
         {/* Nav sidebar on bottom */}
         <div className="row navSidebarBottom">
-          <SidebarMenuBottom sidebar={sidebarMenuLink} />
+          <SidebarMenuBottom sidebar={dataNav} />
         </div>
       </div>
 
