@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title><%- pageData.title %></title>
+  <!-- <title><%- pageData.title %></title> -->
+  <title> GARASTEM :: Quản lý </title>
   <link rel="shortcut icon" href="/titlebar-icon.png" />
 
   <!-- Bootstrap -->
@@ -16,18 +17,21 @@
   <!-- Google Fonts: Nunito -->
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/bundles/<%- gVars['main'][0] -%>">
+  <!-- <link rel="stylesheet" href="/bundles/<%- gVars['main'][0] -%>"> -->
   <link rel="stylesheet" href="/styles/index.css">
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     window.__R_DATA = <%- serialize({ initialData }, { isJSON: true }); -%>
-  </script>
+  </script> -->
 </head>
 
 <body>
+  <div id="root"></div>
+  <!--
   <div id="root"><%- initialMarkup -%></div>
   <script src="/bundles/<%- gVars['vendor'] -%>" type="text/javascript"></script>
   <script src="/bundles/<%- gVars['main'][1] -%>" type="text/javascript"></script>
+  -->
   <!-- Bootstrap 4.4.1 -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
