@@ -87,6 +87,7 @@
 
 .adminEachPage {
     padding: 0;
+    background-color: rgb(248, 248, 248);
 }
 
 /* pageDecoration CSS */
@@ -227,11 +228,105 @@
 
 .productMainView {
     padding: 0;
-    text-align: center;
 }
 
 .productBackground {
     width: 845px;
+}
+
+.searchNotification {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+}
+
+.searchResult {
+    margin: 0;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.eachProductName {
+    color: black;
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.eachProductName:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.eachProductCode {
+    font-size: 12px;
+    font-weight: 300;
+    color: #898989;
+}
+
+.productInfoPage {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.productImage {
+    width: 100%;
+}
+
+.productName {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #FF6600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.productDetail {
+    margin: 0 5px;
+}
+
+.productLittleArea {
+    padding: 0;
+    margin: 0 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #898989;
+}
+
+.productLittleArea > label {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.productLittleArea > input {
+    font-weight: 600;
+    color: black;
+    background-color: white !important;
+    font-size: 14px;
+}
+
+.activebuttonBar {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 22px;
+}
+
+.activateButton {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #FF6600;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+.activateButton:hover {
+    color: white;
 }
 
 .excelRender {
@@ -257,6 +352,19 @@
     font-weight: 500;
     font-size: 12px;
 }
+
+.productChildComp {
+    margin: 0 20px;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    background-color: white;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FF6600;
+}
+
 
 /* adminSetting CSS */
 

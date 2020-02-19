@@ -42,7 +42,6 @@ class ExcelReader extends Component {
         console.log(JSON.stringify(this.state.data, null, 2));
       });
     };
-    console.log(this.state);
 
     if (rABS) {
       reader.readAsBinaryString(this.state.file);
@@ -63,7 +62,7 @@ class ExcelReader extends Component {
         <input
           type="submit"
           className="jsonInput"
-          value="ConsoleLog File Data"
+          value="Process Triggers"
           onClick={this.handleFile}
         />
       </div>
